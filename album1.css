@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+/* div.navbar {
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+nav.nav-down {
+    width: 6%;
+    height: 100vh;
+    margin-bottom: 11.5px;
+
+    border-radius: 0 0 0 40px;
+    background: linear-gradient(110deg, #2BCDD9, #ffffff);
+}
+
+nav.nav-hr {
+    width: 100%;
+    height: 60px;
+    top: 0;
+
+
+    background-color: #2BCDD9;
+    position: fixed;
+} */
+
+body {
+  width: 100%;
+  height: 100vh;
+
+  background-repeat: no-repeat;
+}
+
+section {
+  margin: 5% 5%;
+}
+
+section.album {
+  width: 90%;
+  height: 100vh;
+  top: 0;
+  /* margin-left: 10%; */
+  /* margin-top: -47%; */
+  margin-top: 0%;
+
+  background: linear-gradient(to left top, #32f8cf, #36a1d6);
+}
+
+.album .al {
+  font-weight: 600;
+  margin: 10px 10px;
+  color: transparent;
+}
+
+section div.header {
+  width: 85%;
+  height: 300px;
+  margin: 30px 90px;
+
+  border-radius: 16px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #ffffff33;
+}
+
+div.header img {
+  width: 270px;
+  height: 270px;
+  margin: 10px 10px;
+
+  border-radius: 10px;
+  object-fit: contain;
+}
+
+div.header .album-text {
+  width: 30%;
+  height: 275px;
+  margin: 10px 10px;
+
+  /* background-color: #a67539; */
+}
+
+.album-text span {
+  font-weight: 500;
+  margin: 5px 10px;
+}
+
+.album-text h2 {
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin: 5px 10px;
+}
+
+.album-text i {
+  font-size: 1.5rem;
+  margin: 20px 10px;
+}
+
+.music-list {
+  width: 30%;
+  height: 275px;
+  margin: 10px 10px;
+
+  /* background-color: #a67539; */
+  display: flex;
+  flex-direction: column;
+}
+
+.music-list th {
+  text-align: left;
+}
+
+.music-list td {
+  height: 30px;
+}
+
+.card-box {
+  width: 95%;
+  height: auto;
+  margin: 10px 40px;
+
+  /* background-color: #a67539; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+div.card-box .card {
+  width: 190px;
+  height: 225px;
+
+  border-radius: 16px;
+  background: #ffffff33;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  transition: all 0.2s;
+}
+
+div.card-box .card img {
+  width: 150px;
+  height: 150px;
+
+  object-fit: contain;
+  align-self: center;
+}
+
+.fa-chevron-left,
+.fa-chevron-right {
+  width: 50px;
+  height: 50px;
+  padding: 13px 14px;
+
+  border-radius: 10px;
+  background: #ffffff33;
+  font-size: 1.5rem;
+  transition: all 0.2s;
+}
+
+.card-box .card:hover {
+  transform: translateY(-8px);
+  background-color: #88888898;
+}
+
+div.card-box .fa-chevron-right:hover {
+  transform: scale(1.1) translatex(5px);
+  background-color: #03a9fc;
+}
+
+div.card-box .fa-chevron-left:hover {
+  transform: scale(1.1) translatex(-5px);
+  background-color: #03a9fc;
+}
+
+.art {
+  color: transparent;
+}
+
+/* div.play-down {
+    width: 150%;
+    height: -20vh;
+    margin: 30px -210px;
+
+    position: fixed;
+    background-color: #22AAF6;
+} */

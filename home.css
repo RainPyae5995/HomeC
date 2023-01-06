@@ -1,0 +1,783 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anybody&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: "Libre Baskerville", serif;
+  background: #e8e8e8;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.vtical {
+  width: 20%;
+  height: 100vh;
+  /* background: #f97d7d; */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  /* box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff; */
+}
+
+.vtical .fimg {
+  width: 250px;
+  height: 80px;
+  /* background-color: #999; */
+  border-bottom: 1px solid #ccc;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fimg img {
+  width: 70px;
+  transform: translateY(-10px);
+  filter: drop-shadow(0px 0px 10px #2b71d9);
+}
+
+.fimg h5 {
+  font-size: 2.5rem;
+  color: #3c3c45;
+}
+
+.vtical ul {
+  width: 250px;
+  height: 430px;
+  /* background-color: #ccc; */
+  border-bottom: 1px solid #ccc;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.vtical ul li {
+  width: 150px;
+  padding: 5px 0px;
+  border-radius: 5px 15px 15px 5px;
+  /* background-color: cadetblue; */
+  list-style-type: none;
+
+  display: flex;
+  justify-content: start;
+  align-items: center;
+
+  transition: all 0.2s;
+}
+
+.vtical ul .active {
+  background-color: #2bcdd9;
+  border-radius: 5px 15px 15px 5px;
+}
+
+.vtical ul .active .fa-house-chimney {
+  color: #182848;
+}
+
+.vtical ul .active a {
+  color: #15152a;
+}
+
+.vtical ul li:hover {
+  background-color: #2bcdd9;
+}
+
+.vtical ul li i {
+  padding: 0 8px;
+  color: #3c3c45;
+}
+
+.vtical ul li a {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #3c3c45;
+  margin-left: 5px;
+}
+
+.vtical ol {
+  width: 250px;
+  height: 120px;
+
+  /* background-color: #bbb; */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.vtical ol li {
+  width: 150px;
+  padding: 5px 0px;
+  border-radius: 5px 15px 15px 5px;
+  /* background-color: cadetblue; */
+  list-style-type: none;
+
+  display: flex;
+  justify-content: start;
+  align-items: center;
+
+  transition: all 0.2s;
+}
+
+.vtical ol li:hover {
+  background-color: #2bcdd9;
+}
+
+.vtical ol li i {
+  padding: 0 8px;
+  color: #3c3c45;
+}
+
+.vtical ol li a {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #15152a;
+  margin-left: 5px;
+}
+
+#home {
+  width: 80%;
+  height: 100vh;
+
+  /* background-color: #3bb5f0; */
+}
+
+#home .hozotal {
+  width: 100%;
+  height: 75px;
+  /* background-color: aqua; */
+  /* box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff; */
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.hozotal ul {
+  width: 320px;
+  height: 100%;
+
+  /* background: red; */
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  list-style-type: none;
+}
+
+.hozotal ul li a {
+  text-decoration: none;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #3c3c3c;
+  /* background-color: #ccc;
+    padding: 5px 15px; */
+  margin-right: 10px;
+}
+
+.hozotal ul li .active {
+  /* background-color: #ccc; */
+  padding: 2px 5px;
+  border-bottom: 5px solid #2bcdd9;
+}
+
+.hozotal .sbox {
+  width: 475px;
+  height: 100%;
+  /* background-color: bisque; */
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hozotal .sbox .search {
+  width: 230px;
+  height: 45px;
+  /* background: oldlace; */
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  /* border-radius: 20px 10px 20px 10px; */
+}
+
+/* From uiverse.io by @satyamchaudharydev */
+/* removing default style of button */
+
+.search button {
+  border: none;
+  background: none;
+  color: #8b8ba7;
+}
+/* styling of whole input container */
+.search {
+  --timing: 0.3s;
+  --width-of-input: 200px;
+  --height-of-input: 40px;
+  --border-height: 2px;
+  --input-bg: #fff;
+  --border-color: #2bcdd9;
+  --border-radius: 30px;
+  --after-border-radius: 1px;
+  position: relative;
+  width: var(--width-of-input);
+  height: var(--height-of-input);
+  display: flex;
+  align-items: center;
+  padding-inline: 0.8em;
+  border-radius: var(--border-radius);
+  transition: border-radius 0.5s ease;
+  background: var(--input-bg, #fff);
+}
+/* styling of Input */
+.input {
+  font-size: 1rem;
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  padding-inline: 0.5em;
+  padding-block: 0.7em;
+  border: none;
+}
+/* styling of animated border */
+.search:before {
+  content: "";
+  position: absolute;
+  background: var(--border-color);
+  transform: scaleX(0);
+  transform-origin: center;
+  width: 100%;
+  height: var(--border-height);
+  left: 0;
+  bottom: 0;
+  border-radius: 1px;
+  transition: transform var(--timing) ease;
+}
+/* Hover on Input */
+.search:focus-within {
+  border-radius: var(--after-border-radius);
+}
+
+input:focus {
+  outline: none;
+}
+/* here is code of animated border */
+.search:focus-within:before {
+  transform: scale(1);
+}
+/* styling of close button */
+/* == you can click the close button to remove text == */
+.reset {
+  border: none;
+  background: none;
+  opacity: 0;
+  visibility: hidden;
+}
+/* close button shown when typing */
+input:not(:placeholder-shown) ~ .reset {
+  opacity: 1;
+  visibility: visible;
+}
+/* sizing svg icons */
+.search svg {
+  width: 17px;
+  margin-top: 3px;
+}
+
+.sbox .show {
+  width: 220px;
+  height: 50px;
+  /* background: #ddd; */
+  border-radius: 20px 10px 20px 10px;
+  /* box-shadow: 0px 0px 5px 3px #2bcdd945; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.show button {
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-left: 5px;
+
+  border: none;
+  border-radius: 50%;
+  background: linear-gradient(#272763, #3e4d67);
+  outline: none;
+}
+
+.show button img {
+  width: 33px;
+}
+
+.show .ics {
+  width: 150px;
+  height: 100%;
+  /* background-color: #444; */
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.show .ics .fa-backward-fast,
+.fa-circle-play,
+.fa-forward-fast,
+.fa-shuffle {
+  color: #3c3c3c;
+  font-size: 1.2rem;
+}
+
+.hozotal .ipts {
+  width: 200px;
+  height: 65px;
+  /* background-color: #847979; */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ipts .fa-bell,
+.fa-clock {
+  font-size: 1.5rem;
+  margin-right: 20px;
+  color: #3c3c3c;
+}
+
+.ipts img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 100%;
+  margin-right: 20px;
+}
+
+.fa-circle-chevron-down {
+  font-size: 1.5rem;
+  color: #3c3c3c;
+}
+
+.homepage {
+  width: 99%;
+  height: 550px;
+  margin-top: 20px;
+
+  background: linear-gradient(to left top, #32f8cf, #36a1d6);
+  border-radius: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.homepage .first {
+  width: 35%;
+  height: 100%;
+  /* background-color: #00008ba4; */
+  border-radius: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.first .box {
+  width: 95%;
+  height: 500px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 250px;
+  height: 120px;
+  padding: 0.5rem;
+  background: rgba(198, 198, 198, 0.34);
+  border-radius: 8px;
+  backdrop-filter: blur(5px);
+  position: absolute;
+  border-bottom: 3px solid rgba(255, 255, 255, 0.44);
+  border-left: 2px rgba(255, 255, 255, 0.545) outset;
+  box-shadow: -40px 50px 30px rgba(0, 0, 0, 0.28);
+  transform: skewX(10deg);
+  transition: 0.4s;
+  overflow: hidden;
+  color: white;
+}
+
+.card:hover {
+  height: 500px;
+  transform: skew(0deg);
+}
+
+.card img {
+  width: 220px;
+}
+
+.align {
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  align-self: flex-start;
+}
+
+.red {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ff605c;
+  box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.28);
+}
+
+.yellow {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ffbd44;
+  box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.28);
+}
+
+.green {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #00ca4e;
+  box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.28);
+}
+
+.card h1 {
+  font-size: 1rem;
+  text-align: center;
+  margin: 0.8rem;
+  color: rgb(218, 244, 237);
+  text-shadow: -10px 5px 10px rgba(0, 0, 0, 0.573);
+}
+
+.homepage .second {
+  width: 75%;
+  height: 100%;
+  /* background-color: gainsboro; */
+  border-radius: 20px;
+}
+
+.second .tstations {
+  width: 100%;
+  height: 50%;
+  /* background-color: plum; */
+  border-radius: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tstations .hplist {
+  width: 98%;
+  height: 85%;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tstations .hplist .genres {
+  width: 35%;
+  height: 100%;
+  /* background-color: cadetblue; */
+  border-radius: 16px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hplist .genres .ictxt {
+  width: 100%;
+  height: 70%;
+  /* background-color: darksalmon; */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.genres .ictxt .img {
+  width: 80px;
+  height: 50%;
+
+  background: url(img/play.png);
+  background-position: center;
+  background-size: cover;
+
+  border-radius: 50%;
+}
+
+.genres .ictxt .txts {
+  width: 100%;
+  height: 50%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.genres .ictxt .txts small {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: "Lato", sans-serif;
+  /* text-shadow: -3px -14px 3.5px #e0e0e0; */
+}
+.genres .ictxt .txts span {
+  text-transform: capitalize;
+  font-family: "Lato", sans-serif;
+  /* text-shadow: 0 5px 2px #182848; */
+}
+
+.genres .btns {
+  width: 100%;
+  height: 30%;
+  /* background-color: powderblue; */
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.btns button {
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-weight: 200;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #fff;
+  outline: none;
+  border: none;
+  border-radius: 30px 10px 10px 30px;
+  background: linear-gradient(-145deg, #06beb6, #2c84b0);
+}
+
+.btns select {
+  width: 125px;
+  height: 40px;
+  padding: 7px;
+  color: #fff;
+  font-family: "Anybody", cursive;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 1rem;
+  border-radius: 10px 30px 30px 10px;
+  outline: none;
+  border: none;
+  background: linear-gradient(145deg, #06beb6, #2c84b0);
+}
+
+.btns select option {
+  color: black;
+}
+
+.tstations .hplist .playlist {
+  width: 65%;
+  height: 100%;
+  /* background-color: #d4d4f5; */
+
+  border-radius: 16px;
+  font-family: "Lato", sans-serif;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.hplist .playlist h1 {
+  width: 50%;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 500;
+  font-size: 1.1rem;
+  /* background-color: cadetblue; */
+  margin: 0px 42px;
+  margin-top: 20px;
+}
+
+.hplist .playlist .songs {
+  width: 100%;
+  height: 85%;
+  /* background-color: cornsilk; */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.playlist .songs .one,
+.two {
+  width: 83%;
+  height: 40%;
+  background-color: rgba(255, 255, 255, 0.371);
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.playlist .songs .one img,
+.two img {
+  width: 70px;
+  border-radius: 10px 0 0 10px;
+}
+
+.one .audio,
+.two .audio {
+  width: 75%;
+  height: 100%;
+  /* background-color: cornsilk; */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.audio p {
+  font-size: 1rem;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+}
+
+.audio audio {
+  width: 100%;
+  height: 40px;
+}
+
+.audio audio::-webkit-media-controls-play-button,
+audio::-webkit-media-controls-panel {
+  background-color: #aef2f17d;
+  color: #000;
+}
+
+.second .tartists {
+  width: 100%;
+  height: 50%;
+  /* background-color: lightpink; */
+  border-radius: 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.tartists h2 {
+  font-family: "Quicksand", sans-serif;
+  /* width: 50%; */
+  text-transform: uppercase;
+  font-size: 1rem;
+
+  letter-spacing: 1px;
+  font-weight: bold;
+  color: #000;
+  /* background-color: cadetblue; */
+  margin: 0px 20px;
+  margin-top: 30px;
+}
+
+.tartists .artists {
+  width: 100%;
+  height: 85%;
+  /* background-color: saddlebrown; */
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.tartists .artists .three,
+.four,
+.five,
+.six,
+.seven {
+  width: 130px;
+  height: 78%;
+  background: linear-gradient(
+    -445deg,
+    rgba(255, 255, 255, 0.657),
+    rgb(143, 244, 237)
+  );
+
+  border-radius: 15px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.tartists .artists .three:hover,
+.four:hover,
+.five:hover,
+.six:hover,
+.seven:hover {
+  transform: translateY(-2px) skew(-2deg);
+  box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.3);
+  background: #e9faf9;
+}
+.artists .three img,
+.four img,
+.five img,
+.six img,
+.seven img {
+  width: 85%;
+  border-radius: 8px;
+  object-fit: cover;
+  transform: translateY(3px);
+}
+
+.artists p {
+  font-size: 1.3rem;
+  transform: translateY(-5px);
+  letter-spacing: 1px;
+  text-transform: capitalize;
+
+  font-family: "Quicksand", sans-serif;
+}

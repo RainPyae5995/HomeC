@@ -1,0 +1,319 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: "Libre Baskerville", serif;
+}
+
+#navbar {
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+
+#navbar .vtical {
+  width: 400px;
+  height: 100vh;
+  /* background: #f97d7d; */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.vtical .fimg {
+  width: 250px;
+  height: 100px;
+  /* background-color: #999; */
+  border-bottom: 1px solid #ccc;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fimg img {
+  width: 100px;
+  transform: translateY(-10px);
+  filter: drop-shadow(0px 0px 10px #2b71d9);
+}
+
+.fimg h5 {
+  font-size: 3rem;
+  color: #3c3c45;
+}
+
+.vtical ul {
+  width: 250px;
+  height: 430px;
+  /* background-color: #ccc; */
+  border-bottom: 1px solid #ccc;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.vtical ul li {
+  width: 150px;
+  padding: 5px 0px;
+  border-radius: 5px 15px 15px 5px;
+  /* background-color: cadetblue; */
+  list-style-type: none;
+
+  display: flex;
+  justify-content: start;
+  align-items: center;
+
+  transition: all 0.2s;
+}
+
+.vtical ul .active {
+  background-color: #2bcdd9;
+  border-radius: 5px 15px 15px 5px;
+}
+
+.vtical ul li:hover {
+  background-color: #2bcdd9;
+}
+
+.vtical ul li i {
+  padding: 0 8px;
+  color: #3c3c45;
+}
+
+.vtical ul li a {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #3c3c45;
+  margin-left: 5px;
+}
+
+.vtical ol {
+  width: 250px;
+  height: 120px;
+
+  /* background-color: #bbb; */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.vtical ol li {
+  width: 150px;
+  padding: 5px 0px;
+  border-radius: 5px 15px 15px 5px;
+  /* background-color: cadetblue; */
+  list-style-type: none;
+
+  display: flex;
+  justify-content: start;
+  align-items: center;
+
+  transition: all 0.2s;
+}
+
+.vtical ol li:hover {
+  background-color: #2bcdd9;
+}
+
+.vtical ol li i {
+  padding: 0 8px;
+  color: #3c3c45;
+}
+
+.vtical ol li a {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #15152a;
+  margin-left: 5px;
+}
+
+#navbar .hozotal {
+  width: 100%;
+  height: 75px;
+  /* background-color: aqua; */
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+body .hozotal ul {
+  width: 320px;
+  height: 100%;
+  /* background: red; */
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  list-style-type: none;
+}
+
+.hozotal ul li a {
+  text-decoration: none;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #3c3c3c;
+  /* background-color: #ccc;
+  padding: 5px 15px; */
+  margin-right: 10px;
+}
+
+.hozotal ul li .active {
+  /* background-color: #ccc; */
+  padding: 2px 5px;
+  border-bottom: 5px solid #2bcdd9;
+}
+
+.hozotal .sbox {
+  width: 475px;
+  height: 100%;
+  /* background-color: bisque; */
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hozotal .sbox .search {
+  width: 250px;
+  height: 50px;
+  /* background: oldlace; */
+  box-shadow: 0px 0px 5px 3px #2bcdd945;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border-radius: 20px 10px 20px 10px;
+}
+
+.sbox .search input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  border-radius: 10px 20px 10px 20px;
+  background-color: transparent;
+  font-size: 0.9rem;
+  font-family: "Libre Baskerville";
+  text-align: end;
+  color: #3c3c3c;
+}
+
+.search input::placeholder {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #3c3c3c;
+}
+
+.sbox .search button {
+  width: 60px;
+  height: 50px;
+
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.search button img {
+  width: 25px;
+}
+
+.sbox .show {
+  width: 200px;
+  height: 50px;
+  /* background: #ddd; */
+  border-radius: 20px 10px 20px 10px;
+  box-shadow: 0px 0px 5px 3px #2bcdd945;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.show button {
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-left: 5px;
+
+  border: none;
+  border-radius: 50%;
+  background: linear-gradient(#272763, #3e4d67);
+  outline: none;
+}
+
+.show button img {
+  width: 33px;
+}
+
+.show .ics {
+  width: 150px;
+  height: 100%;
+  /* background-color: #444; */
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.show .ics .fa-backward-fast,
+.fa-circle-play,
+.fa-forward-fast,
+.fa-shuffle {
+  color: #3c3c3c;
+  font-size: 1.2rem;
+}
+
+.hozotal .ipts {
+  width: 200px;
+  height: 65px;
+  /* background-color: #847979; */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ipts .fa-bell,
+.fa-clock {
+  font-size: 1.5rem;
+  margin-right: 20px;
+  color: #3c3c3c;
+}
+
+.ipts img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 100%;
+  margin-right: 20px;
+}
+
+.fa-circle-chevron-down {
+  font-size: 1.5rem;
+  color: #3c3c3c;
+}

@@ -1,0 +1,146 @@
+body {
+  /* background-color: #324ef8; */
+  font-family: "Roboto", sans-serif;
+}
+
+.login-box {
+  width: 360px;
+  height: 400px;
+  margin: auto;
+
+  background: #e0e0e0;
+  box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #ffffff;
+  border-radius: 20px;
+}
+
+.signup-box {
+  width: 360px;
+  height: 600px;
+  margin: auto;
+  background: #e0e0e0;
+  box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #ffffff;
+  border-radius: 20px;
+}
+
+h1 {
+  color: #2b71d9;
+  text-align: center;
+  padding-top: 15px;
+  font-family: "Sevillana", cursive;
+}
+
+h4 {
+  color: #2b71d9;
+  text-align: center;
+  font-family: "Sevillana", cursive;
+}
+
+form {
+  width: 300px;
+  margin-left: 20px;
+  font-family: "Sevillana", cursive;
+  color: #2b71d9;
+}
+
+form label {
+  display: flex;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+form input {
+  width: 100%;
+  padding: 7px;
+  border: none;
+  box-shadow: 2px 2px 7px 0 rgb(0, 0, 0, 0.2);
+  border-radius: 6px;
+  outline: none;
+  color: dimgray;
+  font-family: "Sevillana", cursive;
+}
+
+.input {
+  width: 100%;
+  padding: 8px;
+  border: none;
+  border-radius: 6px;
+  box-shadow: 2px 2px 7px 0 rgb(0, 0, 0, 0.2);
+  outline: none;
+  color: dimgray;
+  font-family: "Sevillana", cursive;
+}
+
+.input:invalid {
+  animation: justshake 0.3s forwards;
+  color: red;
+}
+
+@keyframes justshake {
+  25% {
+    transform: translateX(5px);
+  }
+
+  50% {
+    transform: translateX(-5px);
+  }
+
+  75% {
+    transform: translateX(5px);
+  }
+
+  100% {
+    transform: translateX-(5px);
+  }
+}
+
+form a {
+  color: #2b71d9;
+}
+
+form a:hover {
+  color: blue;
+}
+
+.login {
+  width: 320px;
+  height: 40px;
+  margin-top: 30px;
+  border: none;
+  background-color: #324ef8;
+  color: #3bb5f0;
+  font-size: 18px;
+  font-family: "Sevillana", cursive;
+}
+
+.login:hover {
+  color: white;
+  background-color: blue;
+}
+
+p {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 15px;
+  font-family: "Sevillana", cursive;
+  color: #2b71d9;
+}
+
+p a {
+  color: #1c5470;
+}
+
+p a:hover {
+  color: blue;
+}
+
+.para-2 {
+  text-align: center;
+  color: #3fbdfc;
+  font-size: 15px;
+  margin-top: -10px;
+  font-family: "Sevillana", cursive;
+}
+
+.para-2 a {
+  color: #49c1a2;
+}
