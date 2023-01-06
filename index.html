@@ -1,130 +1,60 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Setting</title>
-        <link href="img/emo.png" rel="icon" type="image/x-icon" />
-        <link rel="stylesheet" href="style.css" type="text/css"/>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro</title>
+    <link href="img/emo.png" rel="icon" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="intro.css" rel="stylesheet" type="text/css">
     <body>
-        <div class="bg">
-            <div class="navbar">
+  
+    <section class="intro">
+       <!-- <img src="2400716.jpg" alt="introbg_firstpage" class="fr" loading="lazy"> -->
+        <nav>
+        <ul class="logo">
+            <li><img src="img/emo.png" alt="logo" class="logo"></li>
+            <li><H2>EMO</H2></li>
+        </ul>
+        
+         <div class="icon">
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+         </div>
 
-                <p class="top">Setting</p>
+         <ul class="singin_up">
+            <a href="login.html"><li>Singin</li></a>
+            <a href="signup.html"><li>Singup</li></a>
+         </ul>
+      </nav>
 
-                <ul>
-                    <li>Language</li>
-                    <li>Download</li>
-                    <li>Feedback</li>
-                    <li>Theme</li>
-                    <li>Help Center</li>
-                    <li>Privacy and Policy</li>             
-                </ul>
+      <div class="emo_am">
+        <div class="i"><img src="img/emo.png"></div>
+        <div class="b"> <img src="img/emo.png" ></div>
+        <div class="c"><img src="img/emored.png"></div>
+      </div>
 
-                <h3>Login benefits</h3>
+      <div class="text">
+        <h1>Listing and Chill</h1><span>Width</span><h2>EMO</h2>
+        <a href="emohome.html" class="st gr">Start Now</a>
+      </div>
 
-                <p class="bot">
-                    -&nbsp;&nbsp;Create your own playlist<br>
-                    -&nbsp;&nbsp;Sync playlist with any devices<br>
-                    -&nbsp;&nbsp;No Ads interuption<br>
-                </p>
+    </section>
 
-                <div class="icon">
-                    <i class="fa-brands fa-facebook-f"></i>
-                    <i class="fa-brands fa-instagram"></i>
-                    <i class="fa-brands fa-twitter"></i>
-                </div>
+    <section id="sc">
+       <img src="img/playlist2.png" class="pl1">
+       <img src="img/playlist1.png" class="pl2">
 
-                <h5>&copy;2022 - 2023 HomeC.<br>
-                    All Rights Reserved</h5>
-            </div>
+    <div class="textpl">
+       <h1>Both IOS and Android</h1><h2>Download Now</h2>
+       <div class="btn">
+       <a href="#" class="pl">PLayStore<i class="fa-brands fa-google-play"></i></a>
+       <a href="#" class="pl">AppStore<i class="fa-brands fa-app-store-ios"></i></a>
+      </div>
+      </div>
 
-            <div class="content">
-                <div class="name">
-                <img src="img/profile.jpg" alt="profile" class="pp"/>
-                <p class="neon">Home C<br>
-                EMO Free <button>Upgrade</button></p>
-                <a href="login.html">Log out</a>
-                </div>
-                
-                <div class="display">
-                    <div class="firstrow">
-                        <label for="location">Location</label>
-                        <select name="location" id="location">
-                            <option>Myanmar</option>
-                            <option>Philippines</option>
-                            <option>Indonesia</option>
-                        </select>
-
-                        <label for="sq">Sound Quality</label>
-                        <select name="sq" id="sq">
-                            <option>high</option>
-                            <option>medium</option>
-                            <option>low</option>
-                        </select>
-                    </div>
-
-                    <div class="secondrow">
-                        <label style="color: aquamarine; font-family: sans-serif;">Substile</label>
-                        <div class="check">
-                            <input id="check" type="checkbox">
-                            <label for="check"></label>
-                          </div>
-
-                        <label style="color: aquamarine aquamarine; font-family: sans-serif;">Explicit Content</label>
-                        <div class="check">
-                            <input id="checktwo" type="checkbox">
-                            <label for="checktwo"></label>
-                          </div>
-                    </div>
-                </div>
-            
-                <div class="sound">
-                    <div class="firstbox">
-                        <label class="label1">Make my new playests public</label>
-                        <div class="checkbox-con">
-                            <input id="checkbox" type="checkbox">
-                          </div>
-
-                    </div>
-
-                    <div class="firstbox">
-                        <label class="label2">Start a private session to listen anonymously</label>
-                        <div class="checkbox-con">
-                            <input id="checkbox" type="checkbox">
-                          </div>
-                    </div>
-                    <div class="firstbox">
-                        <label class="label3">Share my listening activity on spotify</label>
-                        <div class="checkbox-con">
-                            <input id="checkbox" type="checkbox">
-                          </div>
-                    </div>
-                    <div class="firstbox">
-                        <label class="label4">Show my recent play artists</label>
-                        <div class="checkbox-con">
-                            <input id="checkbox" type="checkbox">
-                          </div>
-                    </div>
-                    <div class="firstbox">
-                        <label class="label5">Show Friend activity</label>
-                        <div class="checkbox-con">
-                            <input id="checkbox" type="checkbox">
-                          </div>
-                    </div>
-                    <div>
-                        <div class="firstbox">
-                            <label class="label6">Auto play</label>
-                            <div class="checkbox-con">
-                                <input id="checkbox" type="checkbox">
-                              </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-        <a href="intro.html" class="emo">Emo</a>
-    </body>
-
+    </section>
+</body>
 </html>
